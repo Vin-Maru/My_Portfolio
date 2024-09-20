@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* This allows the main content to grow and push the footer down */
+  padding: 20px;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('./components/assets/images.jpg'); /* Use the image from public folder */
+
+}
+
+header, footer {
+  background-color: #000000; /* Black */
+  color: white;
+  text-align: left;
+  padding: 15px;
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  background-color: #000000; /* Black */
+  text-align: center;
+}

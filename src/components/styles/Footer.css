@@ -1,0 +1,10 @@
+.footer {
+  background-color: #000000; /* Black background */
+  color: white; /* White text */
+  text-align: center; /* Center the text */
+  padding: 15px; /* Padding around the text */
+  width: 100%; /* Ensure it spans the full width */
+  position: relative; /* Relative to the parent container */
+  bottom: 0; /* Stick to the bottom */
+  margin-top: auto; /* Push footer to the bottom if there's space */
+}

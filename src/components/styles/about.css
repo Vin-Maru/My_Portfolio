@@ -1,0 +1,75 @@
+/* About Section */
+.about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the top */
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+}
+
+.text-content {
+  flex: 1;
+  max-width: 600px; /* Ensure content doesn’t stretch too wide */
+  text-align: left;
+  color: aliceblue;
+  font-size: 1.1em;
+}
+
+.about-container {
+  flex: 1;
+  max-width: 300px;
+  text-align: left;
+  margin-top: 20px;
+  color: aliceblue;
+  font-size: 1.1em;
+}
+
+.documents ul {
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+.documents li {
+  margin: 10px 0;
+  
+}
+
+.documents a {
+  color: #007bff;
+  text-decoration: none;
+  color: red;
+}
+
+.documents a:hover {
+  text-decoration: underline;
+}
+
+/* Image styling */
+.my-profile {
+  max-width: 300px;
+  width: 100%; /* Ensures image is responsive */
+  height: auto;
+  margin-top: 20px;
+  border-radius: 2000px; /* Optional: adds rounded corners */
+}
+
+/* For smaller screens (mobile and tablet) */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column; /* Stack content vertically on small screens */
+    text-align: center;
+  }
+
+  .text-content, .about-container, .my-profile {
+    width: 100%; /* Make sure all elements take full width */
+    max-width: none; /* Remove the max width constraint */
+    margin-top: 0; /* Keep the elements closer together */
+  }
+
+  .my-profile {
+    margin-top: 20px; /* Maintain margin above the image */
+  }
+}

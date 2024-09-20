@@ -1,0 +1,10 @@
+.icon {
+    color: #000;
+    padding-top: 50%;
+    content: left;
+  }
+  
+  .icon:hover {
+    color: #0077b5; /* You can change this color for hover effects */
+  }
+  

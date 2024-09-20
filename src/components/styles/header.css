@@ -1,0 +1,79 @@
+/* Nav Container */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border-bottom: 2px solid #ccc; /* Light gray horizontal line */
+
+}
+
+/* Logo */
+.upper-logo {
+  margin-right: 1.5rem;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Nav Links Container */
+.nav-links {
+  display: flex;
+  gap: 0.0rem;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Hide nav-links by default */
+.nav-links.show {
+  display: flex;
+}
+
+/* Individual Nav Links */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.nav-link:hover {
+  color: blue;
+}
+
+/* Toggler Button */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0rem;
+  }
+
+  .nav-links {
+    display: none; /* Hide links by default on small screens */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    padding: 1rem;
+  }
+
+  .nav-links.show {
+    display: flex; /* Show links when toggler is clicked */
+  }
+
+  .nav-link {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,17 @@
+/* Ensure body takes full height of viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make the container take remaining space */
+.container {
+  flex: 1;
+  color: aliceblue;
+  font-size: large;
+}
+
+/* Add this if your footer is a separate component or inside Projects */
+
