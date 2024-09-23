@@ -14,11 +14,11 @@ const About = () => {
             <p>Here you can view and download my Resume.</p>
               <ul>
               <li>
-                  <a href="/public/documents/Resume.pdf" download>Personal Resume</a>
+                  <a href="https://drive.google.com/file/d/1CiLpMJrYWhxQIbUToJE1dyaU-_l5CC1V/view?usp=sharing" download>Personal Resume</a>
                 </li>
                 <li>
                   <a  
-                  href="https://drive.google.com/file/d/1Xy4_H5dT6IbRVOnjJIfbK0IjZh6d-LtW/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1CiLpMJrYWhxQIbUToJE1dyaU-_l5CC1V/view?usp=sharing"
                   download>Personal CV</a>
                 </li>
               </ul>
